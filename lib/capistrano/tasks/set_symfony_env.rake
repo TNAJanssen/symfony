@@ -1,6 +1,6 @@
 namespace :deploy do
   task :set_symfony_env do
-    fetch(:default_env).merge!(symfony_env: fetch(:symfony_env) || 'prod')
+    fetch(:default_env).merge!(app_env: fetch(:app_env) || 'prod')
   end
 end
 
